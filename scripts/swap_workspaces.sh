@@ -4,8 +4,8 @@
 CUR_FILE="/tmp/cur"
 PREV_FILE="/tmp/prev"
 
-CUR=$(cat $CUR_FILE)
-PREV=$(cat $PREV_FILE)
+CUR=`cat $CUR_FILE`
+PREV=`cat $PREV_FILE`
 
 hyprctl dispatch workspace $PREV
 
