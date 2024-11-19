@@ -37,8 +37,9 @@ LowAlert=40
 		  ((i=0))
 		  sleep 2
 	else
-		  ((i=1)) 
-		  sleep 2	
+		  ((i=1))
+		  sleep 2
 	fi
 done
 
+exit 0
