@@ -1,11 +1,10 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 iDIR="$HOME/.config/mako/icons"
 
 # Get Volume
 get_volume() {
-  volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
-  echo "$volume"
+  echo $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}')
 }
 
 is_muted() {
